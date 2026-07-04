@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iTask Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="cabecalho">
+      <div class="marca">
+        <h1>iTask Manager</h1>
+      </div>
+      <p class="subtitulo">Organize suas atividades diárias.</p>
+    </header>
+ 
+    <section class="formulario">
+      <input id="input-titulo" type="text" placeholder="Título da tarefa" maxlength="80" />
+      <input id="input-descricao" type="text" placeholder="Descrição (opcional)" maxlength="200" />
+      <button id="btn-adicionar" class="btn-adicionar" type="button">Adicionar</button>
+    </section>
+ 
+    <section class="secao-lista">
+      <div class="barra-lista">
+        <h2>Minhas tarefas</h2>
+        <span id="contador">0/0 concluídas</span>
+      </div>
+ 
+      <ul id="lista-tarefas">
+        <li id="estado-vazio" class="estado-vazio">
+          Nenhuma tarefa ainda. Adicione a primeira acima.
+        </li>
+      </ul>
+    </section>
+  </main>
+ 
+  <script src="app.js"></script>
+</body>
+</html>
